@@ -7,10 +7,10 @@
 <script>
       function postToGoogle() {
 		alert('above the function');
-            var field1 = $("#emailField").val();
+            /*var field1 = $("#emailField").val();
 	    alert('in the function');
 		alert(field1);
-	alert('after field');
+	alert('after field');*/
             if (field1 == "") {
                 alert('Please Fill Your Email');
                 document.getElementById("emailField").focus();
@@ -23,7 +23,7 @@
             // change url and data
 
             $.ajax({
-		url: "https://docs.google.com/forms/u/2/d/1tjh4EMfSqhMqfG-ITo_X73DTAO6zPd0zXvN3_ZEujUc/formResponse?",
+		url: "https://docs.google.com/forms/u/2/d/e/1FAIpQLScXih-Hcfwdrse_ilCxn79nX5XVgGsytcBENG-mmqIOq7cxOA/formResponse",
                 data: { "entry.1950313219": field1 },
                 type: "POST",
                 dataType: "xml",
