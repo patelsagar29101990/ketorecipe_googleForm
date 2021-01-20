@@ -50,6 +50,18 @@
 	      var field1 = $("#emailField").val();
 	      alert("after");
 	      alert(field1);
+	         $.ajax({
+		url: "https://docs.google.com/forms/u/2/d/e/1FAIpQLScXih-Hcfwdrse_ilCxn79nX5XVgGsytcBENG-mmqIOq7cxOA/formResponse",
+                data: { "entry.1950313219": field1 },
+                type: "POST",
+                dataType: "xml",
+		success: function (d) {
+                },
+                error: function (x, y, z) {
+                    window.location.href = "http://fitmagic.1keto.hop.clickbank.net/?pid=sku1";
+                    document.getElementById('emailField').value = ''
+                }
+            });
       }
        </script>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
